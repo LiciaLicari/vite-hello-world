@@ -1,5 +1,7 @@
 <script>
-import appTitle from './components/AppTitle.vue'
+import AppTitle from './components/AppTitle.vue'
+import AppHero from './components/AppHero.vue'
+import '..node_modules/bootstrap/dist/css/bootstrap.min.css'
 
  export default{
     data() {
@@ -9,14 +11,18 @@ import appTitle from './components/AppTitle.vue'
       
     },
     components: {
-        appTitle
+        AppTitle,
+        AppHero,
+        jumbotron
     },
   }
 </script>
 
 <template>
   <h1>{{message}}</h1>
-  <appTitle />
+  <AppTitle />
+  <jumbotron />
+  
   
 </template>
 
